@@ -11,40 +11,55 @@
     "BACKGROUND_SECONDARY": ["#EDF7FD"],
     "BACKGROUND_TERTIARY": ["#E4F2FA"],
     "BACKGROUND_ACCENT": ["#6FCFF6"],
+
     "BACKGROUND_MODIFIER_ACCENT": ["#DDF1FB"],
     "BACKGROUND_MODIFIER_HOVER": ["#D4ECF9"],
     "BACKGROUND_MODIFIER_SELECTED": ["#C5E7F7"],
+
     "CHAT_BACKGROUND": ["#F6FBFF"],
-    "HEADER_PRIMARY": ["#2E3F4D"],
-    "HEADER_SECONDARY": ["#5B6E7C"],
-    "TEXT_NORMAL": ["#2E3F4D"],
-    "TEXT_MUTED": ["#738391"],
-    "TEXT_PRIMARY": ["#2E3F4D"],
+
+    "HEADER_PRIMARY": ["#1A2F3D"],
+    "HEADER_SECONDARY": ["#36556A"],
+
+    "TEXT_NORMAL": ["#1A2F3D"],
+    "TEXT_MUTED": ["#4F6C80"],
+    "TEXT_PRIMARY": ["#1A2F3D"],
     "TEXT_LINK": ["#40BCF4"],
-    "CHANNELS_DEFAULT": ["#2E3F4D"],
+
+    "CHANNELS_DEFAULT": ["#1A2F3D"],
     "CHANNEL_ICON": ["#40BCF4"],
+
     "INTERACTIVE_NORMAL": ["#40BCF4"],
-    "INTERACTIVE_HOVER": ["#2E3F4D"],
+    "INTERACTIVE_HOVER": ["#1A2F3D"],
     "INTERACTIVE_ACTIVE": ["#40BCF4"],
     "INTERACTIVE_MUTED": ["#A9C7D8"],
+
     "INPUT_BACKGROUND": ["#FFFFFF"],
     "REDESIGN_CHAT_INPUT_BACKGROUND": ["#FFFFFF"],
-    "REDESIGN_CHANNEL_NAME_TEXT": ["#2E3F4D"],
-    "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": ["#5B6E7C"],
+
+    "REDESIGN_CHANNEL_NAME_TEXT": ["#1A2F3D"],
+    "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": ["#36556A"],
+
     "REDESIGN_BUTTON_PRIMARY_BACKGROUND": ["#40BCF4"],
     "REDESIGN_BUTTON_PRIMARY_TEXT": ["#FFFFFF"],
+
     "REDESIGN_BUTTON_SECONDARY_BACKGROUND": ["#E4F2FA"],
-    "REDESIGN_BUTTON_SECONDARY_TEXT": ["#2E3F4D"],
+    "REDESIGN_BUTTON_SECONDARY_TEXT": ["#1A2F3D"],
+
     "MENTION_FOREGROUND": ["#40BCF4"],
     "MENTION_BACKGROUND": ["#40BCF420"],
+
     "THREAD_CHANNEL_SPINE": ["#40BCF4"],
+
     "SCROLLBAR_THIN_THUMB": ["#40BCF4"],
     "SCROLLBAR_THIN_TRACK": ["#EDF7FD"],
+
     "STATUS_ONLINE": ["#43B581"],
     "STATUS_IDLE": ["#FAA61A"],
     "STATUS_DND": ["#F04747"],
     "STATUS_OFFLINE": ["#A9C7D8"]
   },
+
   "rawColors": {
     "PRIMARY_100": "#FFFFFF",
     "PRIMARY_200": "#F6FBFF",
@@ -52,21 +67,23 @@
     "PRIMARY_400": "#DDF1FB",
     "PRIMARY_500": "#C5E7F7",
     "PRIMARY_600": "#A9C7D8",
-    "PRIMARY_700": "#738391",
-    "PRIMARY_800": "#2E3F4D",
+
+    "PRIMARY_700": "#4F6C80",
+    "PRIMARY_800": "#1A2F3D",
 
     "BRAND_260": "#6FCFF6",
     "BRAND_360": "#40BCF4",
     "BRAND_500": "#40BCF4",
-    "BRAND_560": "#2E3F4D",
+    "BRAND_560": "#1A2F3D",
 
     "BLUE_300": "#6FCFF6",
     "BLUE_400": "#40BCF4",
     "BLUE_500": "#40BCF4",
 
     "WHITE_500": "#FFFFFF",
-    "BLACK_500": "#2E3F4D"
+    "BLACK_500": "#1A2F3D"
   },
+
   "background": {
     "url": "https://raw.githubusercontent.com/nemigiwa/discord-theme/main/future-romantic.png",
     "blur": 0,
@@ -74,10 +91,12 @@
     "size": "cover",
     "position": "center"
   },
+
   "plus": {
     "version": "0",
     "iconpack": "MaterialTwoTone"
   },
+
   "spec": 2,
   "source": "local"
 }
