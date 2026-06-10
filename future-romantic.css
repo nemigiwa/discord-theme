@@ -5,7 +5,6 @@
  * @description シンプルな水色ライトテーマ
  */
 
-/* ===== テーマカラー ===== */
 :root {
     --theme-aqua: #6fcff6;
     --theme-aqua-soft: #eaf7fd;
@@ -30,7 +29,6 @@
     --brand-experiment: var(--theme-aqua);
 }
 
-/* ===== 背景画像 ===== */
 #app-mount,
 .theme-dark,
 .theme-light,
@@ -42,7 +40,6 @@
     background-attachment: fixed !important;
 }
 
-/* ===== 背景を見せる ===== */
 .bg_b9f67a,
 .chat_a7d72e,
 .container_bc6214,
@@ -56,38 +53,32 @@
     background: transparent !important;
 }
 
-/* ===== チャット欄 ===== */
 .chatContent_a7d72e,
 .chatContent_f75fb0 {
     background: var(--background-primary) !important;
 }
 
-/* ===== サイドバー ===== */
 .sidebar_a4d4d9,
 .sidebar__5e434 {
     background: var(--background-secondary) !important;
 }
 
-/* ===== メンバー一覧 ===== */
 .members_cbd271,
 .membersWrap_c8ffbb {
     background: var(--background-secondary) !important;
 }
 
-/* ===== 入力欄 ===== */
 .scrollableContainer_d16065,
 [class*="channelTextArea"] {
     background: #ffffff !important;
 }
 
-/* ===== 設定画面 ===== */
 [class*="standardSidebarView"],
 [class*="contentRegion"],
 [class*="sidebarRegion"] {
     background: var(--background-primary) !important;
 }
 
-/* ===== プロフィール ===== */
 [class*="userProfileOuter"],
 [class*="userProfileInner"],
 [class*="userPopoutOuter"],
@@ -95,7 +86,6 @@
     background: #ffffff !important;
 }
 
-/* ===== 文字 ===== */
 body,
 .theme-dark,
 .theme-light {
@@ -105,12 +95,10 @@ body,
     --header-secondary: #64727d !important;
 }
 
-/* ===== ユーザー名 ===== */
 [class*="username"] {
     color: #2d3b45 !important;
 }
 
-/* ===== チャンネル ===== */
 [class*="name"] {
     color: #2d3b45 !important;
 }
@@ -119,12 +107,10 @@ body,
     background: rgba(111, 207, 246, 0.15) !important;
 }
 
-/* ===== リンク ===== */
 a {
     color: var(--theme-aqua) !important;
 }
 
-/* ===== スクロールバー ===== */
 ::-webkit-scrollbar-thumb {
     background: var(--theme-aqua) !important;
 }
