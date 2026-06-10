@@ -1,58 +1,39 @@
 /**
- * @name Future Romantic Aqua
+ * @name Future Romantic Aqua Simple
  * @author nemigiwa
- * @version 2.0.0
- * @description Water-blue light theme for Kettu / BTLoader inspired by Y2K aesthetics.
+ * @version 1.0.0
+ * @description シンプルな水色ライトテーマ
  */
 
+/* ===== テーマカラー ===== */
 :root {
-    /* ===== Theme Colors ===== */
     --theme-aqua: #6fcff6;
-    --theme-aqua-rgb: 111, 207, 246;
+    --theme-aqua-soft: #eaf7fd;
+    --theme-aqua-light: #f5fbff;
 
-    --theme-pink: #f8a8b8;
-    --theme-pink-rgb: 248, 168, 184;
+    --background-primary: rgba(245, 251, 255, 0.88);
+    --background-secondary: rgba(234, 247, 253, 0.88);
+    --background-secondary-alt: rgba(225, 241, 248, 0.92);
+    --background-tertiary: rgba(214, 234, 243, 0.92);
 
-    --theme-cream: #faf7f2;
-    --theme-cream-rgb: 250, 247, 242;
+    --background-floating: #ffffff;
 
-    --theme-text: #2e2f30;
-    --theme-muted: #6d7278;
-
-    /* ===== Discord Variables ===== */
-    --background-primary: rgba(250, 247, 242, 0.84);
-    --background-secondary: rgba(245, 241, 235, 0.72);
-    --background-secondary-alt: rgba(235, 230, 223, 0.82);
-    --background-tertiary: rgba(225, 219, 210, 0.64);
-
-    --background-floating: rgba(255, 255, 255, 0.92);
-
-    --background-accent: var(--theme-aqua);
-
-    --text-normal: var(--theme-text);
-    --text-muted: var(--theme-muted);
-
+    --text-normal: #2d3b45;
+    --text-muted: #64727d;
     --text-link: var(--theme-aqua);
-    --text-brand: var(--theme-aqua);
 
-    --interactive-normal: #5f6368;
-    --interactive-hover: #2e2f30;
+    --interactive-normal: #4d5d68;
+    --interactive-hover: #2d3b45;
     --interactive-active: #000000;
-    --interactive-muted: #9aa0a6;
-
-    --background-modifier-hover: rgba(var(--theme-aqua-rgb), 0.12);
-    --background-modifier-active: rgba(var(--theme-aqua-rgb), 0.22);
-    --background-modifier-selected: rgba(var(--theme-aqua-rgb), 0.18);
+    --interactive-muted: #8fa1ac;
 
     --brand-experiment: var(--theme-aqua);
 }
 
-/* ===== Background ===== */
-
+/* ===== 背景画像 ===== */
 #app-mount,
-.appMount__51fd7,
-.theme-light,
 .theme-dark,
+.theme-light,
 .theme-kettu {
     background-image: url("https://raw.githubusercontent.com/nemigiwa/discord-theme/main/future-romantic.png") !important;
     background-size: cover !important;
@@ -61,200 +42,93 @@
     background-attachment: fixed !important;
 }
 
-/* ===== Transparent Containers ===== */
-
+/* ===== 背景を見せる ===== */
 .bg_b9f67a,
+.chat_a7d72e,
 .container_bc6214,
 .scroller_ead091,
 .wrapper_ef319f,
-.chat_a7d72e,
 .container_cbd271,
 .members_cbd271,
 .container_c2739c,
 .pageWrapper_a3a4ce,
-.layers__960e4,
-.chat_f75fb0,
-.container__2637a {
+.layers__960e4 {
     background: transparent !important;
 }
 
-/* ===== Chat ===== */
-
+/* ===== チャット欄 ===== */
 .chatContent_a7d72e,
 .chatContent_f75fb0 {
-    background: rgba(250, 247, 242, 0.82) !important;
-    backdrop-filter: blur(6px) !important;
-    -webkit-backdrop-filter: blur(6px) !important;
-
-    border-radius: 14px;
-    margin: 8px;
+    background: var(--background-primary) !important;
 }
 
-/* ===== Sidebar ===== */
-
+/* ===== サイドバー ===== */
 .sidebar_a4d4d9,
 .sidebar__5e434 {
-    background: rgba(245, 241, 235, 0.72) !important;
-
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
-
-    border-right: 1px solid rgba(111, 207, 246, 0.18);
+    background: var(--background-secondary) !important;
 }
 
-/* ===== Members ===== */
-
+/* ===== メンバー一覧 ===== */
 .members_cbd271,
 .membersWrap_c8ffbb {
-    background: rgba(245, 241, 235, 0.55) !important;
-
-    backdrop-filter: blur(8px) !important;
+    background: var(--background-secondary) !important;
 }
 
-/* ===== Messages ===== */
-
-[class*="messageContent"],
-[class*="markup"] {
-    color: var(--theme-text) !important;
-}
-
-/* ===== Usernames ===== */
-
-.username_f996d3,
-[class*="username"] {
-    color: #1d2b36 !important;
-    font-weight: 600;
-}
-
-.username_f996d3:hover,
-[class*="username"]:hover {
-    color: var(--theme-aqua) !important;
-}
-
-/* ===== Channel List ===== */
-
-[class*="name"] {
-    color: var(--theme-text) !important;
-}
-
-[class*="modeDefault"]:hover {
-    background: rgba(var(--theme-aqua-rgb), 0.10) !important;
-    border-radius: 10px;
-}
-
-[class*="modeSelected"] {
-    background: rgba(var(--theme-aqua-rgb), 0.16) !important;
-    border-radius: 10px;
-}
-
-/* ===== Input ===== */
-
+/* ===== 入力欄 ===== */
 .scrollableContainer_d16065,
 [class*="channelTextArea"] {
-    background: rgba(255, 255, 255, 0.84) !important;
-
-    border: 1px solid rgba(var(--theme-aqua-rgb), 0.16);
-
-    border-radius: 12px;
+    background: #ffffff !important;
 }
 
-input,
-textarea,
-[class*="slateTextArea"] {
-    color: var(--theme-text) !important;
-}
-
-/* ===== Settings ===== */
-
-[class*="standardSidebarView"] {
-    background: rgba(250, 247, 242, 0.82) !important;
-
-    backdrop-filter: blur(14px) !important;
-}
-
-[class*="contentRegion"] {
-    background: rgba(255, 255, 255, 0.54) !important;
-}
-
+/* ===== 設定画面 ===== */
+[class*="standardSidebarView"],
+[class*="contentRegion"],
 [class*="sidebarRegion"] {
-    background: rgba(245, 241, 235, 0.55) !important;
+    background: var(--background-primary) !important;
 }
 
-/* ===== Profile ===== */
-
+/* ===== プロフィール ===== */
 [class*="userProfileOuter"],
 [class*="userProfileInner"],
 [class*="userPopoutOuter"],
 [class*="userPopoutInner"] {
-    background: rgba(255, 255, 255, 0.76) !important;
-
-    backdrop-filter: blur(14px) !important;
-    -webkit-backdrop-filter: blur(14px) !important;
-
-    border: 1px solid rgba(var(--theme-aqua-rgb), 0.18);
-
-    border-radius: 16px;
+    background: #ffffff !important;
 }
 
-/* ===== Cards ===== */
-
-[class*="card"],
-[class*="container"] {
-    border-radius: 12px;
+/* ===== 文字 ===== */
+body,
+.theme-dark,
+.theme-light {
+    --text-normal: #2d3b45 !important;
+    --text-muted: #64727d !important;
+    --header-primary: #2d3b45 !important;
+    --header-secondary: #64727d !important;
 }
 
-/* ===== Buttons ===== */
-
-button {
-    color: var(--theme-text) !important;
-
-    transition: all 0.15s ease;
+/* ===== ユーザー名 ===== */
+[class*="username"] {
+    color: #2d3b45 !important;
 }
 
-button:hover {
-    background: rgba(var(--theme-aqua-rgb), 0.14) !important;
+/* ===== チャンネル ===== */
+[class*="name"] {
+    color: #2d3b45 !important;
 }
 
-/* ===== Links ===== */
+[class*="modeSelected"] {
+    background: rgba(111, 207, 246, 0.15) !important;
+}
 
+/* ===== リンク ===== */
 a {
     color: var(--theme-aqua) !important;
 }
 
-/* ===== Scrollbar ===== */
-
-::-webkit-scrollbar {
-    width: 6px;
-}
-
+/* ===== スクロールバー ===== */
 ::-webkit-scrollbar-thumb {
-    background: rgba(var(--theme-aqua-rgb), 0.72) !important;
-    border-radius: 4px;
+    background: var(--theme-aqua) !important;
 }
 
 ::-webkit-scrollbar-track {
     background: transparent !important;
-}
-
-/* ===== Selection ===== */
-
-::selection {
-    background: rgba(var(--theme-aqua-rgb), 0.28);
-}
-
-/* ===== Mobile Optimization ===== */
-
-@media (max-width: 900px) {
-    #app-mount,
-    .appMount__51fd7 {
-        background-attachment: scroll !important;
-    }
-
-    .chatContent_a7d72e,
-    .chatContent_f75fb0,
-    .sidebar_a4d4d9,
-    .sidebar__5e434 {
-        backdrop-filter: blur(4px) !important;
-        -webkit-backdrop-filter: blur(4px) !important;
-    }
 }
