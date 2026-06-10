@@ -1,9 +1,0 @@
-/****
- * @name Test Theme
- * @author nemigiwa
- * @version 1.0.0
- ****/
-
-body {
-    --text-normal: red !important;
-}
