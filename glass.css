@@ -1,0 +1,174 @@
+/* ===== Discord Mica ===== */
+@import url("https://discord-mica.pages.dev/src/main.css");
+
+/* ===== 背景設定 ===== */
+:root {
+    --bg-image: url("https://pbs.twimg.com/media/HFSwUzKb0AAKMdv?format=jpg&name=4096x4096");
+    --blur-amount: 0px;
+}
+
+/* 背景画像 */
+#app-mount::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: var(--bg-image) center/cover no-repeat;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ===== 全体透明化 ===== */
+.bg__960e4,
+.chat_f75fb0,
+.chatContent_f75fb0,
+.layers__960e4 {
+    background: transparent !important;
+}
+
+/* ===== ガラスパネル ===== */
+.container__2637a,
+.sidebar__5e434,
+.chatContent_f75fb0,
+.membersWrap_c8ffbb,
+.form_f75fb0,
+.title_f75fb0 {
+    background: rgba(20, 20, 20, 0.22) !important;
+    backdrop-filter: blur(var(--blur-amount));
+    -webkit-backdrop-filter: blur(var(--blur-amount));
+    border-radius: 12px;
+}
+
+/* ===== テキスト ===== */
+body,
+.theme-dark {
+    --text-normal: #ffffff !important;
+    --text-muted: #cfcfcf !important;
+    --header-primary: #ffffff !important;
+    --header-secondary: #d8d8d8 !important;
+}
+
+/* ===== チャンネル ===== */
+.name__2ea32 {
+    color: #ffffff !important;
+}
+
+.modeDefault__2ea32 .name__2ea32 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.modeDefault__2ea32:hover .name__2ea32 {
+    color: #ffffff !important;
+}
+
+.modeSelected__2ea32 .name__2ea32 {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+/* ===== チャンネル背景 ===== */
+[class*="containerDefault"],
+[class*="modeDefault"],
+[class*="wrapper"] {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+[class*="modeSelected"] {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-radius: 8px !important;
+}
+
+/* ===== メッセージ ===== */
+[class*="messageContent"],
+[class*="markup"],
+[class*="username"] {
+    color: #ffffff !important;
+}
+
+[class*="timestamp"] {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* ===== 入力欄 ===== */
+input,
+textarea,
+[class*="slateTextArea"] {
+    color: #ffffff !important;
+}
+
+/* ===== スクロールバー ===== */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+}
+
+/* ===== プロフィール ===== */
+[class*="userProfileOuter"],
+[class*="userProfileInner"],
+[class*="userPopoutOuter"],
+[class*="userPopoutInner"] {
+    background: rgba(18, 18, 24, 0.32) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+}
+
+/* ===== 設定画面 ===== */
+[class*="standardSidebarView"] {
+    background: rgba(18,18,18,0.22) !important;
+    backdrop-filter: blur(12px) !important;
+    color: #ffffff !important;
+}
+
+[class*="sidebarRegion"] {
+    background: rgba(0,0,0,0.15) !important;
+}
+
+[class*="contentRegion"] {
+    background: rgba(255,255,255,0.08) !important;
+    color: #ffffff !important;
+}
+
+/* ===== カード ===== */
+[class*="card"],
+[class*="container"] {
+    background: rgba(255,255,255,0.06) !important;
+    border: 1px solid rgba(255,255,255,0.10) !important;
+    box-shadow: none !important;
+}
+
+/* ===== 通話画面（軽量版） ===== */
+[class*="callContainer"],
+[class*="videoContainer"],
+[class*="videoWrapper"] {
+    background: rgba(20,20,20,0.15) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+/* ===== 通話背景透明 ===== */
+canvas,
+[class*="video"],
+[class*="stream"],
+[class*="call"] {
+    background: transparent !important;
+}
+
+/* ===== ボタン ===== */
+button {
+    color: #ffffff !important;
+}
+
+/* ===== リンク ===== */
+a {
+    color: #8ec8ff !important;
+}
+
+/* ===== 選択テキスト ===== */
+::selection {
+    background: rgba(120, 170, 255, 0.35);
+}
