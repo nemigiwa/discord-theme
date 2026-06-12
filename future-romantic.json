@@ -86,7 +86,7 @@
   "background": {
     "url": "https://raw.githubusercontent.com/nemigiwa/discord-theme/main/future-romantic.png",
     "blur": 0,
-    "alpha": 0,
+    "alpha": 0.01,
     "size": "cover",
     "position": "center"
   },
