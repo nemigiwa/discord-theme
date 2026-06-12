@@ -7,16 +7,16 @@
     }
   ],
   "semanticColors": {
-    "BACKGROUND_PRIMARY": ["#00000000"],
-    "BACKGROUND_SECONDARY": ["#00000000"],
-    "BACKGROUND_TERTIARY": ["#00000000"],
+    "BACKGROUND_PRIMARY": ["#00000001"],
+    "BACKGROUND_SECONDARY": ["#00000001"],
+    "BACKGROUND_TERTIARY": ["#00000001"],
     "BACKGROUND_ACCENT": ["#40BCF4"],
 
     "BACKGROUND_MODIFIER_ACCENT": ["#00000000"],
     "BACKGROUND_MODIFIER_HOVER": ["#00000010"],
     "BACKGROUND_MODIFIER_SELECTED": ["#00000018"],
 
-    "CHAT_BACKGROUND": ["#00000000"],
+    "CHAT_BACKGROUND": ["#00000001"],
 
     "HEADER_PRIMARY": ["#00A4B8"],
     "HEADER_SECONDARY": ["#00A4B8"],
@@ -86,7 +86,7 @@
   "background": {
     "url": "https://raw.githubusercontent.com/nemigiwa/discord-theme/main/future-romantic.png",
     "blur": 0,
-    "alpha": 0.01,
+    "alpha": 0.25,
     "size": "cover",
     "position": "center"
   },
