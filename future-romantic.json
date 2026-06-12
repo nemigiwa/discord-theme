@@ -84,7 +84,7 @@
   },
 
   "background": {
-    "url": "https://raw.githubusercontent.com/nemigiwa/discord-theme/main/future-romantic.png",
+    "url": "https://cdn.jsdelivr.net/gh/nemigiwa/discord-theme@main/future-romantic.png",
     "blur": 0,
     "alpha": 0.25,
     "size": "cover",
@@ -96,6 +96,6 @@
     "iconpack": "MaterialTwoTone"
   },
 
-  "spec": 2,
-  "source": "local"
+"createdAt": "2026-06-12",
+"spec": 2
 }
